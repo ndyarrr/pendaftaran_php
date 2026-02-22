@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Murid baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <h1 class="judul">Formulir Pendaftaran SMKN 1 Boyolangu</h1>
+    <img class="logo" src="logo-esemkitahd.png" alt="logo-smea">
+
+    <form action="proses_daftar.php" method="post">
+        <div class="pointA">
+        <h3 class="poina">A.Data Pribadi Siswa</h3>
+        <div class="card1">
+        <div class="aleft">
+            <label for="nama">Nama :</label> 
+            <input type="text" id="nama" name="name" placeholder="Masukkan nama" required> 
+
+            <label for="nisn">NISN :</label> 
+            <input type="number" id="nisn" name="nisn" placeholder="Masukkan NISN" required> 
+
+            <label for="tmpt"> Tempat Lahir :</label> 
+            <input type="text" id="tmpt" name="tmpt" placeholder="Masukkan tanggal lahir" required> 
+
+            <label for="tgl"> Tempat Lahir :</label> 
+            <input type="date" id="tgl" name="tgl" placeholder="Masukkan tanggal lahir" required> 
+
+            <div class="radio-group">
+                <label>Jenis Kelamin :</label></br>
+                <div class="space">
+                <input type="radio" name="klmn" value="Laki-laki" required> <p>Laki-laki</p>
+                <input type="radio" name="klmn" value="Perempuan" required> <p>Perempuan</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="aright">
+
+            <label for="agama">Agama :</label> 
+            <select name="agama" required>
+                <option value="">Belum memilih</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghuchu">Konghuchu</option>
+            </select> 
+
+            <label for="alamat"> Alamat Lengkap :</label> 
+            <textarea class="alamat" id="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required></textarea> 
+
+            <label for="">Nomor HP Siswa :</label> 
+            <input type="number" id="nomor" name="nomor" placeholder="Masukkan nomor telp" required> 
+
+            <label for="email">Email :</label> 
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required> 
+        </div>
+        </div>
+        </div>
+
+        <div class="mid">
+
+        <div class="pointB">
+        <h3 class="poinb">B.Data Sekolah Asal</h3>
+
+            <label for="asal">Asal Sekolah :</label> 
+            <input type="text" id="asal" name="asal" placeholder="Masukkan asal sekolah" required> 
+
+            <label for="tahun">Tahun Lulus :</label> 
+            <input type="number" id="tahun" name="tahun" min="2023" max="2025" placeholder="Masukkan nomor tahun lulus" required> 
+
+            <label for="rata">Rata-rata Nilai Ujian :</label> 
+            <input type="number" id="rata" name="rata" max="100" placeholder="Masukkan rata-rata nilai ujian" required> 
+        </div>
+
+
+        <div class="pointC" action="proses_daftar.php" method="post">
+        <h3 class="poinc">C.Pilihan sekolah dan jurusan</h3>
+            <label for="sekolah">Pilihan Jurusan :</label>
+            <select name="jurusan" required>
+                <option value="">Belum memilih</option>
+                <option value="PPLG">PPLG</option>
+                <option value="TKJT">TKJ</option>
+                <option value="DKV">DKV</option>
+                <option value="BDP">BDP</option>
+
+            </select>
+            <div class="ekskulgr">
+                <label class="ekskul" for="ekskul">Ekstrakulikuler yang diminati:</label>
+                <div class="checkbox">
+                    <div><input type="checkbox" name="ekskul[]" value="Futsal"> Futsal</div>
+                    <div><input type="checkbox" name="ekskul[]" value="Pramuka"> Pramuka </div>
+                    <div><input type="checkbox" name="ekskul[]" value="Paskibra"> Paskibra</div>
+                    <div><input type="checkbox" name="ekskul[]" value="Broadcasting"> Broadcasting </div>
+                    <div><input type="checkbox" name="ekskul[]" value="IT Club"> IT Club </div>
+                    <div><input type="checkbox" name="ekskul[]" value="Musik"> Musik </div>
+                    <div><input type="checkbox" name="ekskul[]" value="Hacking"> Hacking </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="pointD" action="proses_daftar.php" method="post">
+            <h3 class="poind">D.Data orang tua</h3>
+            <div class="ortuinfo">
+
+            <div class="ortuleft">
+            <label for="nama_ayah">Nama ayah :</label> 
+            <input type="text" id="nama_ayah" name="nama_ayah" placeholder="Masukkan nama ayah" required> 
+            <label for="pekerjaan">Pekerjaan Ayah :</label> 
+            <input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah" placeholder="Masukkan pekerjaan ayah" required>
+            </div>
+
+            <div class="orturight">
+            <label for="nama_ibu">Nama ibu :</label> 
+            <input type="text" id="nama_ibu" name="nama_ibu" placeholder="Masukkan nama ibu" required> 
+            
+            <label for="pekerjaan_ibu">Pekerjaan Ibu :</label> 
+            <input type="text" id="pekerjaan_ibu" name="pekerjaan_ibu" placeholder="Masukkan pekerjaan ibu" required>
+            </div>
+
+            </div>
+            <label for="nomor_ortu">Nomor HP Orang Tua :</label> 
+            <input type="number" id="nomor_ortu" name="nomor_ortu" placeholder="Masukkan nomor telp orang tua" required>
+        </div>
+        <div class="btn">
+            <button class="btnres" type="reset">Reset</button>
+            <button class="btnsub" type="submit">Daftar</button>
+
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+Buatlah form pendaftaran siswa baru dengan isian berikut:
+A. DATA SISWA
+Nama Lengkap (text)
+NISN (number)
+Tempat Lahir (text)
+Tanggal Lahir (date)
+Jenis Kelamin (radio)
+Laki-laki
+Perempuan
+Agama (select option)
+Islam
+Kristen
+Katolik
+Hindu
+Buddha
+Konghucu
+Alamat Lengkap (textarea)
+Nomor HP Siswa (text)
+Email Siswa (email)
+B. DATA SEKOLAH ASAL
+Asal Sekolah (text)
+Tahun Lulus (number)
+Rata-rata Nilai Ujian (number)
+C. PILIHAN SEKOLAH & JURUSAN
+Pilihan Jurusan (select option)
+PPLG
+TJKT
+DKV
+BDP
+Ekstrakurikuler yang diminati (checkbox, boleh pilih lebih dari satu):
+Pramuka
+Futsal
+Paskibra
+Broadcasting
+IT Club
+Musik
+D. DATA ORANG TUA
+Nama Ayah (text)
+Pekerjaan Ayah (text)
+Nama Ibu (text)
+Pekerjaan Ibu (text)
+Nomor HP Orang Tua (text)
+Form harus menggunakan:
+method = POST
+action = proses_daftar.php
+Tombol yang harus ada:
+* Daftar Sekarang
+* Reset
