@@ -32,14 +32,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="php.css">
+    <link rel="stylesheet" href="./css/php.css">
     <title>Succes</title>
 </head>
 
 <body>
     <div class="main">
 
-    <img class="logo" src="logo-esemkitahd.png" alt="logo-smea">
+    <img class="logo" src="./assets/logo-esemkitahd.png" alt="logo-smea">
 
     <div class="bg"></div>
 
